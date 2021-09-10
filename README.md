@@ -1,5 +1,7 @@
 # My Sweet new tab
 
+![Screenshot](./screenshot.png)
+
 A minimalistic new tab extension for chrome with a huge clock.
 
 ## How to use
