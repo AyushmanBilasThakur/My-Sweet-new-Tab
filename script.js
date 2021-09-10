@@ -5,6 +5,21 @@ const ampmContainer = document.getElementById("ampm");
 const dateContainer = document.getElementById("date");
 
 const usernameContainer = document.getElementById("username");
+const themeToggler = document.getElementById("theme-toggler");
+const body = document.querySelector("body");
+
+let theme = localStorage.getItem("theme") || "light"
+themeToggler.innerHTML = theme == "light" ? "darken" : "lighten"
+body.classList.add(theme)
+
+
+themeToggler.addEventListener("click", () => {
+    theme = theme == "light" ? "dark" : "light"
+    themeToggler.innerHTML = theme == "light" ? "darken" : "lighten"
+    localStorage.setItem("theme", theme);
+    body.classList.toggle("light")
+    body.classList.toggle("dark")
+})
 
 usernameContainer.addEventListener("keypress", (e) => {
     if(e.key == "Enter"){

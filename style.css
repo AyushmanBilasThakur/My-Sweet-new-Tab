@@ -6,6 +6,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body.dark{
+    background-color: #111;
+    color: #eee;
+}
+
+
+#theme-toggler{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.light #theme-toggler{  
+    color: #020074;
+}
+
+.dark #theme-toggler{
+    color: skyblue;
+}
+
+
 #date{
     font-size: 2vw;
     text-align: center;
@@ -58,11 +83,20 @@ h3{
     text-align: center;
 }
 
+.dark a{
+    color: #eee;
+}
+
 a{
     font-size: 2vw;
     color:black;
     margin: 10px 5px;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover{
+    color: gray;
 }
 
 .footer div{
