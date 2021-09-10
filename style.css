@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#date{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: 'Sen', sans-serif;
+    text-align: center;
+}
+
+.username{
+    font-size: 2vw;
+    width: fit-content;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+}
+
+.username:focus{
+    border-bottom: 2px solid gray;
+}
+
+.clock{
+    font-size: 6vw;
+    margin-top: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#ampm{
+    font-size: 4vw;
+    text-align: center;
+}
+
+.footer{
+    margin-top: 10vh;
+}
+
+.footer h3{
+    font-size: 2vw;
+    text-align: center;
+}
+
+a{
+    font-size: 2vw;
+    color:black;
+    margin: 10px 5px;
+    text-decoration: none;
+}
+
+.footer div{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

@@ -1,0 +1,13 @@
+{
+    "name": "tab0",
+    "short_name": "tab0",
+    "description": "A minimal chrome new tab provided by this extension",
+    "version": "1.0",
+    "manifest_version": 2,
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "icons": {
+      "512": "icons/smile.png"
+    }
+  }
